@@ -23,8 +23,10 @@ body {
   padding: 0%;
   margin: 0%;
 }
+
 main{
-    background-color: #645986;
+  background: rgb(100,89,134);
+  background: linear-gradient(180deg, rgba(100,89,134,1) 30%, rgba(78,2,80,1) 100%);
 }
 
 .main h1{
@@ -36,11 +38,25 @@ main{
     text-shadow: #4f759b ;
 }
 
+a{
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, #4f759b);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+a:hover, a:focus {
+background-size: 100% 2px;
+}
+
 /*----------HEADER---------------*/
 
 .header {
     padding: 0;
-    background-color: #4e0250;
+    background: rgb(100,89,134);
+    background: linear-gradient(0deg, rgba(100,89,134,1) 0%, rgba(78,2,80,1) 100%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -152,6 +168,8 @@ main{
   width: 100%;
   text-align: center;
 }
+
+/* Section */
 
 .section{
     display: flex;
